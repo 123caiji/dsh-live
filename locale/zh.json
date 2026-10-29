@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "现场",
+    "description": "实时查看会话正在发生什么：当前轮次与步骤、正在运行的工具、后台任务、待批准的请求和花费。"
+  },
+  "type.label": "现场",
+  "guide.title": "现场驾驶舱",
+  "guide.description": "这个会话此刻正在做什么。",
+  "empty": "这个会话现在没有在运行的东西。",
+  "idle": "空闲",
+  "phase.llm": "思考中",
+  "phase.tool": "正在执行工具",
+  "phase.waiting": "等你处理",
+  "phase.idle": "空闲",
+  "now": "当前",
+  "turn": "第 {n} 轮",
+  "step": "第 {n} 步",
+  "elapsed": "{s} 秒",
+  "tools": "运行中的工具",
+  "noTools": "没有工具在运行。",
+  "approvals": "需要你处理",
+  "jobs": "后台任务",
+  "spend": "Token",
+  "errors": "错误",
+  "recent": "刚完成的",
+  "noProjection": "此面板拿不到实时数据。",
+  "unsupported": "此面板需要会话投影席位。"
+}

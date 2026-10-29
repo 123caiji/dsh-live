@@ -1,0 +1,59 @@
+{
+	"name": "dsh-live",
+	"version": "0.1.0",
+	"description": "Live cockpit for DeepSeek Harness: what is happening now, what needs you, what it costs.",
+	"type": "module",
+	"license": "MIT",
+	"author": "123caiji",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/123caiji/dsh-live.git"
+	},
+	"homepage": "https://github.com/123caiji/dsh-live#readme",
+	"bugs": {
+		"url": "https://github.com/123caiji/dsh-live/issues"
+	},
+	"keywords": [
+		"dsh-plugin",
+		"dsh",
+		"session",
+		"live",
+		"sidebar",
+		"observability"
+	],
+	"exports": {
+		".": "./index.js",
+		"./client": "./client.js",
+		"./locale/*.json": "./locale/*.json",
+		"./icon": "./icon.svg"
+	},
+	"files": [
+		"index.js",
+		"client.js",
+		"locale/",
+		"icon.svg",
+		"cordis.patch.yml",
+		"README.md"
+	],
+	"scripts": {
+		"test": "node test/host-fold.mjs && node test/client-module.mjs && node test/component-render.mjs",
+		"test:react": "node test/react-dom.mjs"
+	},
+	"devDependencies": {
+		"jsdom": "^25.0.1",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	},
+	"dsh": {
+		"bundle": {
+			"patch": "./cordis.patch.yml"
+		},
+		"client": {
+			"platform": "web",
+			"immediately": true,
+			"inject": [
+				"@deepseek-ai/dsh-client-ui-sidebar-right"
+			]
+		}
+	}
+}

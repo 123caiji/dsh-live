@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Live",
+    "description": "Watch a session as it happens: current turn and step, running tools, background jobs, pending approvals, and spend."
+  },
+  "type.label": "Live",
+  "guide.title": "Live cockpit",
+  "guide.description": "What this session is doing right now.",
+  "empty": "Nothing is running in this session right now.",
+  "idle": "Idle",
+  "phase.llm": "Thinking",
+  "phase.tool": "Running a tool",
+  "phase.waiting": "Waiting for you",
+  "phase.idle": "Idle",
+  "now": "Now",
+  "turn": "Turn {n}",
+  "step": "step {n}",
+  "elapsed": "{s}s",
+  "tools": "Running tools",
+  "noTools": "No tool is running.",
+  "approvals": "Needs your attention",
+  "jobs": "Background jobs",
+  "spend": "Tokens",
+  "errors": "Errors",
+  "recent": "Recently finished",
+  "noProjection": "Live data is unavailable in this panel.",
+  "unsupported": "This panel needs the session projection seat."
+}
